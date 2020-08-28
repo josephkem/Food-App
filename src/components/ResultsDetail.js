@@ -1,12 +1,14 @@
 import React from "react";
 import { View, Text, StyleSheet, TextInput } from "react-native";
 
-const ResultsDetail = () => {
+const ResultsDetail = ({ result }) => {
   return (
     <View>
-      <Text>Detail</Text>
+      <Text>{result.name}</Text>
     </View>
   );
 };
+
+const styles = StyleSheet.create({});
 
 export default ResultsDetail;

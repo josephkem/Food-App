@@ -1,6 +1,7 @@
 import React from "react";
 import { View, Text, StyleSheet } from "react-native";
 import { FlatList } from "react-native-gesture-handler";
+import ResultsDetail from "../components/ResultsDetail";
 
 const ResultsList = ({ title, results }) => {
   return (
@@ -11,7 +12,7 @@ const ResultsList = ({ title, results }) => {
         horizontal={true}
         data={results}
         renderItem={({ item }) => {
-          return <Text>{item.name}</Text>;
+          return <ResultsDetail result={item} />;
         }}
       />
     </View>
