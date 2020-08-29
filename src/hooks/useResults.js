@@ -22,7 +22,7 @@ export default () => {
 
   //Call search api when component is rendered
   useEffect(() => {
-    searchApi("pasta");
+    searchApi("food");
   }, []);
 
   return [searchApi, results, errorMessage];
